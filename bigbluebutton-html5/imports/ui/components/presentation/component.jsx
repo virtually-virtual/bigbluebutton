@@ -121,7 +121,7 @@ class PresentationArea extends PureComponent {
       );
     }
 
-    if (layoutSwapped && restoreOnUpdate && isViewer && currentSlide) {
+    if (layoutSwapped && restoreOnUpdate && isViewer) {
       const slideChanged = currentSlide.id !== prevProps.currentSlide.id;
       const positionChanged = slidePosition.viewBoxHeight !== prevProps.slidePosition.viewBoxHeight
         || slidePosition.viewBoxWidth !== prevProps.slidePosition.viewBoxWidth;
